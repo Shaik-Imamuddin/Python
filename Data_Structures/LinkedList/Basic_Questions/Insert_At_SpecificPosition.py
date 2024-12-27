@@ -14,6 +14,13 @@ class Linkedlist:
             while temp.addr is not None:
                 temp = temp.addr
             temp.addr = new_node
+    def InsertAtBegin(self,data):
+        new_node=Node(data)
+        if self.head is None:
+            self.head=new_node
+        else:
+            new_node.addr=self.head
+            self.head=new_node
     def InsertAtPosition(self, pos, data):
         if pos == 0:
             self.InsertAtBegin(data)
@@ -39,7 +46,7 @@ class Linkedlist:
 ll=Linkedlist()
 ll.InsertAtEnd(10)
 ll.InsertAtEnd(20)
-ll.InsertAtEnd(30)
+ll.InsertAtBegin(30)
 ll.InsertAtPosition(2,40)
-ll.InsertAtPosition(1,50)
+ll.InsertAtPosition(0,50)
 ll.dispaly()
