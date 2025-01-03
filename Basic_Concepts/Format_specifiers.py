@@ -1,7 +1,3 @@
-print("Hello")
-print("Hello"[0])
-print("Hello"[-1])
-
 #format specifiers and format strings
 
 #integer format specifiers
