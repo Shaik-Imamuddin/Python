@@ -47,10 +47,11 @@ class Linkeslist:
 ll=Linkeslist()
 val=0
 
-while(val!=-1):
+while True:
     val = int(input())
-    if(val!=-1):
-        ll.insertAtEnd(val)
+    if val==-1:
+        break
+    ll.insertAtEnd(val)
 val1 = int(input())
 pos = int(input())
 
